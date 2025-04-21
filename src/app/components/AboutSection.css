@@ -20,14 +20,16 @@
     display: flex;
     gap: 3rem;
     align-items: center;
+    justify-content: center;
   }
-  
   .about-carousel {
     flex: 1;
-    min-width: 300px;
     display: flex;
     justify-content: center;
     align-content: center;
+    aspect-ratio: 1/1 !important;
+    width: 100%;
+    height: auto;
   }
   
   .about-text {
@@ -37,36 +39,108 @@
   }
   
   .about-text p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    font-size: 19px;
   }
-  
   .goal-highlight {
     color: #3182ce;
     font-weight: 600;
   }
+  
+
 @media (max-width: 768px) {
     .about-content {
-      flex-direction: column;
+      font-size: 13px;
     }
+    .about-content p{
+      font-size: 13px;
+    }
+
     .about-title{
-      margin-top: 15%;}
+      margin-top: 25%;}
     .about-carousel {
       width: 100%;
       max-width: 500px;
+      max-height: 500px;
       margin: 0 auto;
       padding: 0 1rem; 
     }
   
     .about-text {
-      width: 100%;
+      width: 90%;
       padding: 0 1rem;
     }
   }
   
   @media (max-width: 480px) {
     .about-carousel {
-      max-width: 100%; /* Повна ширина на дуже малих екранах */
-      padding: 0; /* Видаляємо відступи */
+      max-width: 100%; 
+      padding: 0;
     }
   }
+  .about-text ul {
+    padding-left: 2rem; 
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 760px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }  
+  .about-text{
+    width: 100%;}
+    
+    .about-title{
+      margin-top: 55%;
+      display: flex;
+      align-items: center;
+      margin-left: 0.1%;
+      font-size: 2.5rem;
+    }
+  
+}
+
+
+
+.about-content {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+/* Приховуємо карусель залежно від розміру екрану */
+.desktop-only {
+  display: block;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Адаптив */
+@media (max-width: 767px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+}

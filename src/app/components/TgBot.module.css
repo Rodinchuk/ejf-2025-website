@@ -1,0 +1,147 @@
+.botHangar {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+    background: white;
+}
+
+.commandCenter {
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.transmissionTitle {
+    color: #257bfc;
+    margin-bottom: 5%;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-family: "Exo 2";
+}
+
+.transmissionBody {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dataModule {
+    flex: 1;
+    min-width: 280px;
+    margin-right: 2rem;
+    border: 3px solid #111A94;
+    border-radius: 25px;
+    padding: 70px;
+    font-size: 24px;
+    color: gray;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.dataModule ul {
+    padding-left: 4rem;
+    margin-top: 0.5rem;
+}
+.botText ul {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.accessPortal {
+    display: inline-block;
+    margin-top: 5%;
+    padding: 2.5rem 5rem;
+    background: linear-gradient(180deg, #257bfc, #111A94);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 32px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .accessPortal {
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .accessPortal {
+        border-radius: 13px;
+        padding: auto 3rem;
+    }
+}
+
+.robotAvatar {
+    flex: 1;
+    max-width: 550px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .transmissionBody {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dataModule {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        font-size: 28px;
+    }
+
+    .robotAvatar {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .transmissionTitle {
+        font-size: 2.5rem;
+    }
+    
+    .dataModule {
+        font-size: 24px;
+        padding: 40px;
+    }
+
+    .accessPortal {
+        padding: 1rem 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .transmissionTitle {
+        font-size: 2rem;
+    }
+
+    .dataModule {
+        font-size: 16px;
+        padding: 30px;
+    }
+
+    .accessPortal {
+        font-size: 0.8rem;
+    }
+
+    .robotAvatar {
+        max-width: 300px;
+    }
+}
+.botText ul {
+    margin-left: 2rem; 
+}
+.botText p {
+   margin-left: 0rem;
+}
+.botText {
+    text-align: left;
+}

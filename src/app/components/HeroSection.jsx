@@ -1,19 +1,29 @@
 import styles from "@/app/components/HeroSection.module.css";
+import Emoji from "@/app/components/Emoji";
 
 export default function CareerFairBanner() {
   return (
     <section id="home" className={styles.careerBanner}>
       <div className={styles.content}>
         <div className={styles.imageContainer}>
-          <img src="./images/briefcase.png" className={styles.briefcase} />
-        </div>
+        <img src="./images/tens-of-companies.png" className={styles.opo1} />
 
+        <img src="./images/2-days.png" className={styles.opo2} />
+        <img src="./images/thousands-of-students.png" className={styles.opo3} />
+
+        <img src="./images/ball1.png" className={styles.miniball1} />
+        <img src="./images/ball2.png" className={styles.miniball2} />
+        <img src="./images/ball3.png" className={styles.miniball3} />
+          <img src="./images/andrii.png" className={styles.briefcase} />
+        </div>
+        <div className={styles.textContainer}>
         <h1>
           <p className={styles.title}>Інженерний</p>
           <p className={styles.title}>Ярмарок</p>
           <p className={styles.subtitle}>Кар'єри</p>
-        </h1>
-        <div className={styles.highlightText}>Інвестуй у майбутнє!</div>
+        </h1></div>
+        <div className={styles.highlightText}>Досить мріяти про успішну кар’єру, почни створювати її тут і зараз разом з ІЯК <Emoji symbol="⚡️" />
+ </div>
         <div className={styles.containerhero}>
           <div className={styles.uni}>
             <svg
@@ -31,10 +41,7 @@ export default function CareerFairBanner() {
                 strokeWidth="2"
               />
             </svg>
-            <ul className={styles.universities}>
-              <li>Національний університет</li>
-              <li>"Львівська Політехніка"</li>
-            </ul>
+            <div className={styles.universities}>НУ ЛП, 4 н.к </div>
           </div>
           <div className={styles.separator}></div>
           <div className={styles.ejfdate}>
@@ -55,17 +62,16 @@ export default function CareerFairBanner() {
             <div className={styles.universities}>28–29 травня</div>
           </div>
         </div>
-      </div>
+        <div className={styles.opos}><p>Десятки компаній</p><p>Два дні</p><p>Тисячі студентів</p></div>
 
+      </div>
       <div className={styles.vectorContainer}>
         <img
           src="./images/bg-hero.png"
           alt="Декоративна хвиля"
           className={styles.vectorImage}
         />
-      </div>
-          <img src="./images/bubbles.png" className={styles.bubbles} />
-       
+      </div>       
     </section>
   );
 }

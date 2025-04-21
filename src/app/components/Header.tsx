@@ -24,9 +24,6 @@ const Header = () => {
   };
   const router = useRouter();
 
-  const goToEng = () => {
-    router.push("/en"); 
-  };
  
 
   return (
@@ -45,15 +42,15 @@ const Header = () => {
       </a>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
-          <li><a href="#about">Про подію</a></li>
-          <li><a href="#stats">Статистика</a></li>
-          <li><a href="#contacts">Контакти</a></li>
+            <li><a href="#about" style={{ fontWeight: '900' }}>Про подію</a></li>
+
+          <li><a href="#stats">Розклад</a></li>
+          <li><a href="#contacts">Спікери</a></li>
         </ul>
       </nav>
-      <button onClick={goToEng} className={styles.interButton} >
-      EN
-    </button>
-      <a onClick={scrollToPartnership} className={styles.partnerButton}>Стати партнером</a>
+      <a onClick={scrollToPartnership} className={`${styles.partnerButton} ${styles.desktopOnly}`}>Стати учасником</a>
+      <a onClick={scrollToPartnership} className={`${styles.partnerButton} ${styles.desktopOnly}`}>Співпрацювати</a>
+
 
       
       <div className={styles.menuIcon} onClick={toggleMenu}>
@@ -64,13 +61,11 @@ const Header = () => {
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}>
         <button className={styles.closeButton} onClick={closeMenu}>×</button>
         <ul>
-          <li><a href="#about" onClick={closeMenu}>Про подію</a></li>
+          <li><a style={{ fontWeight: '900' }} onClick={closeMenu}>Про подію</a></li>
           <li><a href="#stats" onClick={closeMenu}>Статистика</a></li>
           <li><a href="#contacts" onClick={closeMenu}>Контакти</a></li>
-          <li><a href="#partnership"><button className={styles.partnerButton} onClick={closeMenu}>Стати партнером</button></a></li>
-          <div onClick={goToEng} className={styles.interButton} >
-      EN
-    </div>
+          <li><a href="#partik"><button className={styles.partnerButton} onClick={closeMenu}>Стати учасником</button></a></li>
+          <li><a href="#partnership"><button className={styles.partnerButton} onClick={closeMenu}>Співпрацювати</button></a></li>
         </ul>
       </div></div>
     </header>

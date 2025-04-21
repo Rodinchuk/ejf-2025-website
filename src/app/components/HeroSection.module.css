@@ -1,4 +1,3 @@
-/* components/CareerFairBanner.module.css */
 .careerBanner {
   position: relative;
   background: linear-gradient(180deg, #257bfc, #111a94);
@@ -7,7 +6,6 @@
   max-width: 100%;
   margin: 0 auto;
   text-align: left;
-  /* width: 100%; Забираємо обмеження ширини */
   z-index: 5;
 }
 
@@ -17,7 +15,7 @@
   min-height: 100%;
   margin: 0 auto;
   padding-bottom: 440px;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 50px;
   z-index: 5;
 }
@@ -31,7 +29,7 @@
 
 .vectorImage {
   width: 100%;
-  height: 100%;
+  height: 400px !important;
   object-fit: fill;
   display: block;
   border-radius: 0%;
@@ -40,27 +38,39 @@
   position: absolute;
   bottom: -1px;
   height: 30%;
+  z-index: 10;
 }
+@media(max-width: 768px) {
+  .vectorImage {
+  object-fit: cover;
+    height: 300px !important;
+    top: 90%;
+    background: linear-gradient(to top, #111a94 80%, transparent 20%);
+  }}
+
 
 .title {
   font-size: 96px;
   font-family: "Exo 2";
   font-weight: 700;
+  margin: 0%;
 }
 
 .subtitle {
   font-size: 96px;
-
+  margin: 0%;
   font-family: "Exo 2";
   font-weight: 700;
   margin-bottom: 2rem;
 }
 .highlightText {
-  font-size: 32px;
+  font-size: 20px;
+  width: 55%;
+  word-wrap: break-word;
   margin-bottom: 2rem;
   color: #55a7ff;
 }
-.universities li {
+.universities {
   list-style: none;
   padding: 0;
   font-size: 1.2rem;
@@ -101,7 +111,7 @@
     font-size: 65px;
   }
   .highlightText {
-    font-size: 25px;
+    font-size: 15px;
   }
 
   .separator {
@@ -133,7 +143,7 @@
     font-size: 45px;
   }
   .highlightText {
-    font-size: 25px;
+    font-size: 15px;
   }
 }
 
@@ -154,7 +164,11 @@
   .careerBanner {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
+    padding: 0%;
+  }
+  .highlightText{
+    margin-left: 10%;
   }
   .universities {
     font-size: 80%;
@@ -167,10 +181,17 @@
     transform: none;
     justify-content: center;
     margin-top: 20px;
+    display: none;
   }
+
 .containerhero{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10%;
+}
+.separator{
+  display: none;
 }
 .content{
   padding-left: 0;
@@ -183,6 +204,7 @@
 @media (max-width: 768px) {
   .content {
     margin-left: 0;
+    padding-top: 100px;
   
   }
 
@@ -201,25 +223,84 @@
   .sideImage {
     width: 100px;
   }
-  .containerhero{
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-  }
-  .separator{
-    display: none;
-  }
+  
+ 
 }
 
 .briefcase {
   width: 100%;
   height: 100%;
 }
+.miniball1 {
+  position: absolute;
+  left: 92%;
+  top: 57%;
+  animation: move1 3s ease-in-out infinite;
+}
+
+@keyframes move1 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.miniball2 {
+  position: absolute;
+  left: 40%;
+  top: 65%;
+  animation: move1 3s ease-in-out infinite;
+}
+
+.miniball3 {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  animation: move1 3s ease-in-out infinite;
+}
+.opo2{
+    position: absolute;
+    width: 120px;
+    left: 25%;
+    top: 40%;
+    animation: move2 3s ease-in-out infinite;
+}
+.opo3{
+  position: absolute;
+  width: 220px;
+  left: 70%;
+  top: 62%;
+  animation: move2 3s ease-in-out infinite;
+}
+.opo1{
+  position: absolute;
+  width: 240px;
+  left: 40%;
+  top: 5%;
+  animation: move2 3s ease-in-out infinite;
+}
+.vectorContainer{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+  
+}
+@keyframes move2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
 .imageContainer{
   position: absolute;
-  width: 30%;
-  right: 5%;
-  top: 100px;
+  width: 68%;
+  left: 38%;
+  top: 1px;
   border-radius: 10px;
 }
 @media (max-width: 1024px) {
@@ -274,15 +355,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.universities li:first-child {
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.universities li:last-child {
-  font-size: 1.2rem;
+  font-weight: lighter;
 }
 
 .separator {
@@ -301,4 +374,22 @@
 .location,
 .calendar {
   flex-shrink: 0;
+}
+@media (max-width: 1024px) {
+  .textContainer {
+    text-align: left;
+    margin-left: 10%;
+  }
+.opos {
+  margin-left: 10%;
+  gap: 10px;
+  font-size: 16px;
+}
+.opos p{
+  text-align: center;
+  background-color: #257BFC;
+  border-radius: 10px;
+}
+
+
 }

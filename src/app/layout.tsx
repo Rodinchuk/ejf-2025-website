@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ІЯК 2025 Партнерство",
+  title: "Інженерний Ярмарок Кар'єри 2025",
 };
 
 export default function RootLayout({
@@ -23,10 +23,7 @@ export default function RootLayout({
 }>) {
   return ( 
      <html lang="en">
-    <head>
-      {/* <meta name="robots" content="noindex, nofollow" /> */}
-      <meta name="google-site-verification" content="9vHRFlk5Pc5WUFMwJpTDDZ1rkVn-YTEaGezKjFSYmMs" />
-    </head>
+    <head/> 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

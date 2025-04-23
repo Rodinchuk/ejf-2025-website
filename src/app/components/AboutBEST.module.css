@@ -1,5 +1,10 @@
 /* CSS файл для компонента BestLviv */
+.section{
+  transform: translateY(-23%);
+  background-color: #257BFC;
+  height: 1200px;  
 
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -8,11 +13,21 @@
   border-radius: 8px;
   margin: 0 auto;
   padding: 20px;
+  z-index: 3;
 }
-
+@media (max-width: 768px) {
+  .section {
+    transform: translateY(-18%);
+  }
+  .container {
+    transform: translateY(50%);
+  }
+}
 .title {
-  margin-bottom: 10%;
-  color: #257BFC;
+  position: relative;
+  display: block;
+  padding-top: 10%;
+  color: #fff;
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0 0 15px 0;
@@ -292,4 +307,7 @@
 }
 .infoBlock{
   max-width: 40%;}
+}
+.backgroundImage{
+  transform: translateY(-30%);
 }

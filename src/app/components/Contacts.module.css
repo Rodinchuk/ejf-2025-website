@@ -2,6 +2,7 @@
 
 .container {
     padding: 2rem;
+    transform: translateY(-75%);
   }
   
   .cardWrapper {
@@ -11,12 +12,24 @@
     max-width: 90%;
     margin: 0 auto;
   }
+  .title {  
+    transform: translateY(-100%);
+    margin-bottom: 10%;
+    color: #257bfc;
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0 0 15px;
+    text-align: center;
+    width: 100%;
+    font-family: "Exo 2";
+  }
   
   .contactInfo {
     flex: 2;
     display: flex;
     flex-direction: column;
     max-width: 40%;
+    align-items: space-between;
   }
   
   
@@ -29,6 +42,10 @@
   @media (max-width: 768px) {
  .contactInfo {
     max-width: 90%;
+  }
+  .title {
+    font-size: 2.5rem;
+    margin-top: 20%;
   }
  
   .imageWrapper{
@@ -43,31 +60,22 @@
   }
   
   .image {
-    width: 100%;
+    max-width: 630px;
     border-radius: 1rem;
     object-fit: cover;
   }
   
-  .title {  
-    margin-bottom: 10%;
-    color: #257bfc;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0 0 15px;
-    text-align: center;
-    width: 100%;
-    font-family: "Exo 2";
-  }
+ 
   
   .name {
-    font-size: 1.25rem;
+    font-size: 40px;
     font-weight: 600;
-    color: #111827;
+    color: #257BFC;
   }
   
   .role {
     font-size: 1rem;
-    color: #6b7280;
+    color: #767676;
   }
   
   .details p {
@@ -78,19 +86,20 @@
   .description {
     margin-top: 0.5rem;
     font-size: 1rem;
-    color: #374151;
+    color: #0C0C12;
   }
   
   .primaryButton {
     margin-top: 1rem;
-    background: linear-gradient(to right, #3b82f6, #6366f1);
+    background: linear-gradient(0deg, #111A94,#257BFC);
     color: white;
-    padding: 0.6rem 1.2rem;
+    padding: 1.4rem 1.2rem;
     border: none;
     border-radius: 0.5rem;
     font-size: 1rem;
     cursor: pointer;
     transition: opacity 0.3s ease;
+
   }
   
   .primaryButton:hover {

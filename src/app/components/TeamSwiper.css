@@ -1,11 +1,12 @@
 .team-section {
-    background: linear-gradient(180deg, #0052ff 0%, #00c6ff 100%);
+    background: linear-gradient(180deg, #111A94 0%, #257BFC 100%);
     color: white;
     text-align: center;
     padding: 40px 20px;
 }
 
 .team-title {
+    margin-top: 150px;
     font-size: 48px;
     margin-bottom: 40px;
     color: #ffff;
@@ -17,6 +18,7 @@
 @media (max-width: 768px) {
     .team-title {
         font-size: 36px;
+        margin-top: 10px;
     }
 }
 
@@ -110,7 +112,7 @@
 .swiper-button-next {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    margin-top: 17%;
+    margin-top: 30%;
     background: none;
     border: none;
     color: none;
@@ -122,17 +124,38 @@
 .swiper-button-next{
     margin-right: -6%;
 }
-@media (max-width: 320px) {
+
+@media (max-width: 480px) {
     .swiper-button-prev{
-        margin-left: -10%;
-        margin-top:60%
+        margin-left: -8%;
+        margin-top:100%
     }
     .swiper-button-next{
-        margin-right: -12%;
-        margin-top:60%
+        margin-right: -8%;
+        margin-top:100%
     }
 }
 
+@media (max-width: 390px) {
+    .swiper-button-prev{
+        margin-left: -10%;
+        margin-top:120%
+    }
+    .swiper-button-next{
+        margin-right: -10%;
+        margin-top:120%
+    }
+}
+@media (max-width: 320px) {
+    .swiper-button-prev{
+        margin-left: -11%;
+        margin-top:130%;
+    }
+    .swiper-button-next{
+        margin-right: -12%;
+        margin-top:130%;
+    }
+}
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
     transform: scale(1.1);

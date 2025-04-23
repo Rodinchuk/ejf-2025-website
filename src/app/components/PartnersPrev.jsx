@@ -1,7 +1,10 @@
 import react from 'react';
 import './PartnersPrev.css';
+import waveUp from "../../../public/images/bg-hero.png";
+import Image from "next/image";
 export default function PartnersPrev(){
     return(
+        <div className='pbackground'>
         <section className='partners-section width-container'>
             <h2 className='ptitle'>Наші партнери</h2>
             <div className="partners">
@@ -11,5 +14,7 @@ export default function PartnersPrev(){
 
             </div>
         </section>
+                    <Image src={waveUp} alt="Wave" className="wave-up" style={{ transform: 'translateY(5%)' }}/>
+        </div>
     )
 }

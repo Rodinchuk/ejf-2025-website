@@ -22,10 +22,10 @@ export default function Contacts() {
 
     emailjs
       .send(
-        "your_service_id",
-        "your_template_id",
+        "service_7xshe0s",
+        "template_lap52fe",
         formData,
-        "your_public_key"
+        "nH1slg9lPzjgOixSC"
       )
       .then(
         () => {
@@ -56,8 +56,8 @@ export default function Contacts() {
           <p className={styles.name}>Сеньків Максим</p>
           <p className={styles.role}>головний організатор</p>
           <div className={styles.details}>
-            <p>📞 +380 66 638 5322</p>
-            <p>✉️ maksym.senkiv@best-eu.org</p>
+            <p> +380 66 638 5322</p>
+            <p>maksym.senkiv@best-eu.org</p>
           </div>
           <p className={styles.description}>
             Бажаєте долучитися до заходу як партнер? Заповніть форму і ми обов’язково з Вами зв’яжемось!
@@ -118,7 +118,7 @@ export default function Contacts() {
                 required
               />
               <button type="submit" className={styles.submitButton}>
-                Співпрацювати
+                Стати партнером
               </button>
             </form>
           </div>

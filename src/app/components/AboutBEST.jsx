@@ -14,10 +14,25 @@ export default function AboutBEST() {
             технічних спеціальностей. Нашою місією є розвиток студентів через
             обмін знаннями та співпрацю компаній, університетів та студентів
             Європи.
-          </p>
+          </p> 
+          <p className={styles.description}>Дізнатися більше на{' '}
           <a href="https://www.best-lviv.org.ua/" className={styles.link}>
-            Дізнатися більше на сайті ↗
-          </a>
+           сайті ↗
+          </a></p>
+          <div className={styles.lilstats}>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>84</span>
+              <span className={styles.statLabel}>осередків</span>
+            </div>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>30</span>
+              <span className={styles.statLabel}>країн</span>
+            </div>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>36</span>
+              <span className={styles.statLabel}>років досвіду</span>
+            </div>
+          </div>
         </div>
         <div className={styles.infoBlock}>
           <img

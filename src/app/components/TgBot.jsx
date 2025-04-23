@@ -3,7 +3,7 @@ import Emoji from "@/app/components/Emoji";
 
 export default function TelegramBot() {
   return (
-    <div className={styles.botHangar}>
+    <div id="bot"className={styles.botHangar}>
       <div className={styles.commandCenter}>
         <h2 className={styles.transmissionTitle}>Telegram Бот</h2>
         <div className={styles.transmissionBody}>

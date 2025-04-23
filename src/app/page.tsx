@@ -8,6 +8,7 @@ import PartnersPrev from "./components/PartnersPrev";
 import AboutBEST from './components/AboutBEST';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
+import TeamSwiper from './components/TeamSwiper';
 import './globals.css';
 import type { Metadata } from "next";
 
@@ -27,6 +28,7 @@ export default function Home() {
       <AboutSection />
       <TgBot/>
       <Activities />
+      <TeamSwiper />
       <PartnersPrev />
       <AboutBEST />
       <Contacts />

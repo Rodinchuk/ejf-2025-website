@@ -28,6 +28,7 @@
     "react-toastify": "^11.0.3",
     "slick-carousel": "^1.8.1",
     "sonner": "^1.7.4",
+    "swiper": "^11.2.6",
     "tailwind": "^4.0.0",
     "tailwind-merge": "^3.0.1"
   },

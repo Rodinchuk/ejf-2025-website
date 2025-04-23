@@ -10,11 +10,13 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-//#257BFC
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
 
+  const scrollToPartik = () => {
+    document.getElementById("bot")?.scrollIntoView({ behavior: "smooth" });
+  };
   const scrollToPartnership = () => {
     document.getElementById("partnership")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -48,8 +50,8 @@ const Header = () => {
           <li><a href="#contacts">Спікери</a></li>
         </ul>
       </nav>
-      <a onClick={scrollToPartnership} className={`${styles.partnerButton} ${styles.desktopOnly}`}>Стати учасником</a>
-      <a onClick={scrollToPartnership} className={`${styles.partnerButton} ${styles.desktopOnly}`}>Співпрацювати</a>
+      <a onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>Стати учасником</a>
+      <a onClick={scrollToPartnership} className={`${styles.partnerButton} ${styles.desktopOnly}`}>Стати партнером</a>
 
 
       
@@ -59,13 +61,13 @@ const Header = () => {
         <div className={styles.bar}></div>
       </div>
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}>
-        <button className={styles.closeButton} onClick={closeMenu}>×</button>
+        <button className={styles.closeButton} onClick={closeMenu}>✕</button>
         <ul>
           <li><a style={{ fontWeight: '900' }} onClick={closeMenu}>Про подію</a></li>
           <li><a href="#stats" onClick={closeMenu}>Статистика</a></li>
           <li><a href="#contacts" onClick={closeMenu}>Контакти</a></li>
-          <li><a href="#partik"><button className={styles.partnerButton} onClick={closeMenu}>Стати учасником</button></a></li>
-          <li><a href="#partnership"><button className={styles.partnerButton} onClick={closeMenu}>Співпрацювати</button></a></li>
+          <li><a href="#bot"><button className={styles.partnerButton} onClick={closeMenu}>Стати учасником</button></a></li>
+          <li><a href="#partnership"><button className={styles.partnerButton} onClick={closeMenu}>Стати партнером</button></a></li>
         </ul>
       </div></div>
     </header>

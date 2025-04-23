@@ -13,7 +13,7 @@ const ExpandableCard = ({ title, description }) => {
       <div className="card-header">
         <h3 className="card-title">{title}</h3>
         <div className={`card-toggle ${isExpanded ? "rotate-180" : ""}`}>
-          <img src="./images/toddle.png" alt="toggle" />
+          <img src="./images/toggle.svg" alt="toggle" />
         </div>
       </div>
       {isExpanded && <p className="description">{description}</p>}

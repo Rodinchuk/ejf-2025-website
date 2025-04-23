@@ -6,8 +6,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
-  width: 100%;
+  /* max-width: 1200px; */
+  width: 90%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  column-gap: 60px;
+  gap: 20px;
  width: 100%;
 
 }
@@ -26,8 +26,9 @@
 .cardcontainer {
   display: flex;
   flex-direction: column;
-  flex-basis: 630px;
-  align-items: center;
+  flex-basis: 500px;
+  align-items: flex-end;
+  width: auto;
 }
 
 /* Стилі для карток */
@@ -41,7 +42,7 @@
   padding: 15px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-  border: 3px solid #257BFC;
+  border: 3px solid #A5CAF9;
   width: 100%;
   max-width: 450px;
   min-height: 100px;
@@ -62,7 +63,7 @@
 
 .card-collapsed {
   background-color: #fff;
-  min-height: 100px;
+  min-height: 80px;
   margin-bottom: 0%;
   gap: 0;
   display: flex;
@@ -70,6 +71,7 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 3%;
+  height: auto;
 }
 
 /* Заголовок картки */
@@ -87,17 +89,11 @@
 
 .card-title {
   font-size: 1.7rem;
-  color: black;
+  color:black;
   font-family: 'Exo 2', sans-serif;
+  font-weight: bold;
   margin: 0;
   flex-grow: 1;
-
-}
-@media (max-width: 768px) {
-  .card-title {
-    font-size: 1.3rem;
-  }
-  
 }
 
 /* Кнопка перемикання */
@@ -106,8 +102,8 @@
 }
 
 .card-toggle img {
-  width: 16px;
-  height: 10px;
+  width: 24px;
+  height: 16px;
 }
 
 .rotate-180 {
@@ -143,10 +139,14 @@
     flex-direction: column;
     align-items: center;
   }
-
+  .card-title{
+    font-size: 1.4rem;
+  }
   .cardcontainer {
-    width: 100%;
+    width: 90%;
     order: 2;
+    justify-content: center;
+    margin-left: 10%;
   }
 
   .pictures {

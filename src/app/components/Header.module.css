@@ -38,7 +38,7 @@
 .nav {
   display: flex;
   justify-content: center;
-  flex: 1; /* розтягує простір між логотипом та кнопкою */
+  flex: 1; 
 }
 
 .navList {
@@ -48,7 +48,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7rem; /* рівномірний відступ між елементами */
+  gap: 7rem;
   margin: 0;
   padding-inline: 10px;
 
@@ -140,6 +140,7 @@
 
   .menuIcon {
     display: flex;
+    margin-right: 10%;
   }
 
   .mobileMenu {

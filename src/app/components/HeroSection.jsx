@@ -1,5 +1,6 @@
 import styles from "@/app/components/HeroSection.module.css";
 import Emoji from "@/app/components/Emoji";
+import Image from 'next/image';
 
 export default function CareerFairBanner() {
   return (
@@ -16,6 +17,7 @@ export default function CareerFairBanner() {
         <img src="./images/ball3.png" className={styles.miniball3} />
           <img src="./images/andrii.png" className={styles.briefcase} />
         </div>
+     
         <div className={styles.textContainer}>
         <h1>
           <p className={styles.title}>Інженерний</p>
@@ -62,15 +64,29 @@ export default function CareerFairBanner() {
             <div className={styles.universities}>28–29 травня</div>
           </div>
         </div>
-        <div className={styles.opos}><p>Десятки компаній</p><p>Два дні</p><p>Тисячі студентів</p></div>
-
+        <div className={styles.opos}><div className={styles.oport}>Десятки компаній</div><div className={styles.oport}>Два дні</div><div className={styles.oport}>Тисячі студентів</div></div>
+        <div className={styles.microImages}>
+          
+          <img src="./images/microball1.png" className={styles.microball1} />
+          <img src="./images/microball2.png" className={styles.microball2} />
+          <img src="./images/microball3.png" className={styles.microball3} />
+          <img src="./images/microball4.png" className={styles.microball4} />
+          </div>
       </div>
       <div className={styles.vectorContainer}>
-        <img
+        {/* <img
           src="./images/bg-hero.png"
           alt="Декоративна хвиля"
           className={styles.vectorImage}
-        />
+        /> */}
+        <Image
+    src="/images/bg-hero.png" // Шлях до зображення в папці public
+    alt="Декоративна хвиля"
+    className={styles.vectorImage}
+    width={1920} // Вкажіть ширину зображення
+    height={1080} // Вкажіть висоту зображення
+    priority
+  />
       </div>       
     </section>
   );

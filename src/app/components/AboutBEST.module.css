@@ -34,7 +34,8 @@
 .textBlock {
   flex: 1 1 45%; /* Змінено: textBlock займає 45% ширини */
   max-width: 633px;
-  border: 3px solid #0056d6;
+  border: 3px solid #111A94;
+  background-color: #fff;
   padding: 20px;
   border-radius: 20px;
   gap: 20px;
@@ -77,27 +78,51 @@
   font-weight: bold;
   font-family: 'Nunito', sans-serif;
 }
-
-.link:hover {
-  text-decoration: underline;
-}
-
-.infoBlock {
-  flex: 1;
-  text-align: center;
-}
-
 .stats {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
+.link:hover {
+  text-decoration: underline;
+}
+
+.lilstats{
+  display: none;
+}
+
+.infoBlock {
+  flex: 1;
+  background-color: #fff;
+
+  text-align: center;
+  border: 3px solid #111A94;
+  border-radius: 20px;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .infoBlock {
+    flex: 1 1 100%;
+    border: 2px solid #111A94;
+  }
+  .lilstats{
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  }
+  .stats{
+    display: none;
+  }
+}
 
 .statItem {
+  display: flex;
   text-align: center;
   margin: 10px;
   font-family: 'Nunito', sans-serif;
+  flex-direction: column;
 }
 
 .statNumber {
@@ -259,4 +284,12 @@
   .section {
       margin-top: 1%;
   }
+}
+@media (min-width: 1200px) {
+.textBlock{
+  max-width: 40%;
+  gap: 40px;
+}
+.infoBlock{
+  max-width: 40%;}
 }

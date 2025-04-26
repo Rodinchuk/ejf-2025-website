@@ -71,6 +71,7 @@
     font-weight: 600;
     color: #257BFC;
   }
+
   
   .role {
     transform: translateY(-150%);
@@ -87,7 +88,8 @@
   
   .description {
     margin-top: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 24px;
+    font-weight: 400;
     color: #0C0C12;
     transform: translateY(30%);
   }
@@ -192,4 +194,66 @@
     background-color: #D6D6D6; 
     margin: 1rem 0;
     transform: translateY(-30px);
+  }
+  .icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-bottom: -5px;
+  }
+  .details{
+    transform: translateY(-50%);
+  }
+  .firstBlock{
+    transform: translateY(-20%);
+  }
+  @media (max-width: 768px) {
+    .name {
+      font-size: 22px !important; 
+      font-weight: 400;
+    }
+    .details p {
+      font-size: 12px; 
+    }
+    .description {
+      font-size: 14px; 
+    }
+   
+    .modalTitle {
+      font-size: 24px; 
+    }
+    .form input {
+      font-size: 16px; 
+    }
+    .submitButton {
+      font-size: 16px; 
+    }
+    .role{
+      font-size: 14px !important; 
+      transform: translateY(-50%);
+    }
+    .divider{
+      transform: translateY(-15px);
+    }
+    .contactInfo{
+      align-items: center;
+      justify-content: center;
+    }
+    .cardWrapper{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .primaryButton {
+      display: flex;
+      font-size: 16px; 
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 230px;
+      border-radius: 16px;
+      padding: 20px 10px;
+
+    }
+
   }

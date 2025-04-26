@@ -53,21 +53,24 @@ export default function Contacts() {
         </div>
 
         <div className={styles.contactInfo}>
+          <div className={styles.firstBlock}>
           <p className={styles.name}>Сеньків Максим</p>
           <p className={styles.role}>головний організатор</p>
           <div className={styles.divider}></div>
           <div className={styles.details}>
-            <p> +380 66 638 5322</p>
-            <p>maksym.senkiv@best-eu.org</p>
-          </div>
+            <p><img src="./images/phone.svg" alt="phone" className={styles.icon} />
+            +380 66 638 5322</p>
+            <p>          <img src="./images/mail.svg" alt="mail" className={styles.icon} />
+            maksym.senkiv@best-eu.org</p>
+          </div></div>
           <p className={styles.description}>
-            Бажаєте долучитися до заходу як партнер? Заповніть форму і ми обов’язково з Вами зв’яжемось!
+            Бажаєте долучитися до заходу як партнер? Заповніть форму і ми обов'язково з Вами зв'яжемось!
           </p>
           <button
             onClick={() => setShowModal(true)}
-            className={styles.primaryButton}
+            className={`${styles.primaryButton} text-center`}
           >
-            Співпрацювати
+            Стати партнером
           </button>
         </div>
       </div>
@@ -93,7 +96,7 @@ export default function Contacts() {
               <input
                 type="text"
                 name="name"
-                placeholder="Ваше ім’я та прізвище"
+                placeholder="Ваше ім'я та прізвище"
                 onChange={handleChange}
                 required
               />
@@ -118,7 +121,7 @@ export default function Contacts() {
                 onChange={handleChange}
                 required
               />
-              <button type="submit" className={styles.submitButton}>
+              <button type="submit" className={`${styles.submitButton} text-center`}>
                 Стати партнером
               </button>
             </form>

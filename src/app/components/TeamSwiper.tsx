@@ -27,9 +27,14 @@ export default function TeamSwiper() {
     return (
         <div className="team-background">
             <Image src={waveUp} alt="Wave" className="wave-up" style={{ transform: 'translateY(60%)'  }} />
+          
         <section className="team-section">
+            
             <h2 className="team-title">Команда організаторів</h2>
-
+            <img src="./images/bsball1.png" className="bsball1" />
+            <img src="./images/bsball2.png" className="bsball2" />
+            <img src="./images/bsball3.png" className="bsball3" />
+            <img src="./images/bsball4.png" className="bsball4" />
             <div className="swiper-nav">
             <button className="swiper-button-prev custom-swiper-button">
             <img 

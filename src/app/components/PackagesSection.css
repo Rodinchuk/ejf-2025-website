@@ -34,6 +34,8 @@ body {
   width: 100%;
   height: 300px;
   transform: scale(-1);
+  z-index: 2;
+
 }
 .package-wave-down{
   position: absolute;
@@ -126,7 +128,6 @@ body {
   }
 .package-wave-up{
   height: 200px;
-
 }
 
 .packages-section {

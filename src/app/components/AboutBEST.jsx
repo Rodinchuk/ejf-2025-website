@@ -14,8 +14,9 @@ export default function AboutBEST() {
         style={{ 
         position: 'absolute',
         width: '100%',
-        height: '70%', // Changed from 90% to 70% to make it shorter
+        height: '70%', 
         objectFit: 'cover',
+        overflow: 'visible',
         zIndex: -1
         }} 
       />

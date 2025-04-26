@@ -55,6 +55,7 @@ export default function Contacts() {
         <div className={styles.contactInfo}>
           <p className={styles.name}>Сеньків Максим</p>
           <p className={styles.role}>головний організатор</p>
+          <div className={styles.divider}></div>
           <div className={styles.details}>
             <p> +380 66 638 5322</p>
             <p>maksym.senkiv@best-eu.org</p>

@@ -1,5 +1,6 @@
 .team-section {
-    background: linear-gradient(180deg, #111A94 0%, #257BFC 100%);
+    position: relative;
+    background: linear-gradient(180deg, #111A94 , #257BFC 90%);
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -21,6 +22,23 @@
         margin-top: 10px;
     }
 }
+
+@keyframes move1 {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  @keyframes move2 {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+  }
 
 .team-swiper {
     width: 100%;
@@ -188,3 +206,56 @@
         height:350px;
         justify-content: flex-end;
     }
+    .bsball1{ 
+        left: 3px;
+        top: 40%;
+        position: absolute !important;
+        animation: move2 3s ease-in-out infinite;
+    }
+    .bsball2{ 
+        position: absolute !important;
+        left: 9%;
+        top: 28%;
+        animation: move1 3s ease-in-out infinite;
+    }
+    .bsball3{ 
+        position: absolute !important;
+        left: 97%;
+        top: 40%;
+        animation: move2 3s ease-in-out infinite;
+    }
+    .bsball4{ 
+        position: absolute !important;
+        left: 90%;
+        top: 30%;
+        animation: move1 3s ease-in-out infinite;
+    }
+    @media (max-width: 768px) {
+        .bsball1{ 
+            left: 3px;
+            top: 55%;
+            position: absolute !important;
+            animation: move2 3s ease-in-out infinite;
+        }
+        .bsball2{ 
+            max-width: 60px;
+            left: -3%;
+            animation: move1 3s ease-in-out infinite;
+        }
+        .bsball3{ 
+            position: absolute !important;
+            left: 97%;
+            top: 30%;
+            animation: move2 3s ease-in-out infinite;
+        }
+        .bsball4{ 
+            position: absolute !important;
+            left: 95%;
+            top: 70%;
+            animation: move1 3s ease-in-out infinite;
+        }
+    }
+.wave-up{ 
+    position: relative;
+    z-index: 3;
+}

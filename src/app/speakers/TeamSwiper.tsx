@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { ArrowLeftIcon, ArrowRightIcon } from 'lucide-react';
+import { ArrowLeftIcon, ArrowRightIcon, Scroll } from 'lucide-react';
 import { useIsMobile } from '../use-mobile';
 import styles from './TeamSwiper.module.css';
 
@@ -122,12 +122,12 @@ const Profile = () => {
           ))}
         </div>
       </div>
-      <button onClick={scrollPrev} className={`${styles.button} ${styles.prevButton}`}>
-        <ArrowLeftIcon size={24} className={styles.arrow} />
-      </button>
-      <button onClick={scrollNext} className={`${styles.button} ${styles.nextButton}`}>
-        <ArrowRightIcon size={24} className={styles.arrow} />
-      </button>
+      <button onClick={scrollPrev} className={`${styles.desktopButton} ${styles.prevButton}`}>
+          <img src="./images/speakleft.svg" alt="Previous" className={styles.arrow} />
+        </button>
+        <button onClick={scrollNext} className={`${styles.desktopButton} ${styles.nextButton}`}>
+          <img src="./images/speakright.svg" alt="Next" className={styles.arrow} />
+        </button>
     </div>
   );
 };

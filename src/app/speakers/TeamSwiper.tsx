@@ -1,6 +1,5 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { ArrowLeftIcon, ArrowRightIcon, Scroll } from 'lucide-react';
 import { useIsMobile } from '../use-mobile';
 import styles from './TeamSwiper.module.css';
 
@@ -48,7 +47,6 @@ const profiles: ProfileData[] = [
 const Profile = () => {
   const isMobile = useIsMobile();
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [desktopIndex, setDesktopIndex] = useState(0);
 
   const scrollPrev = useCallback(() => {
@@ -67,24 +65,24 @@ const Profile = () => {
     setDesktopIndex((prev) => (prev < profiles.length - 1 ? prev + 1 : 0));
   };
 
-  useEffect(() => {
-    if (emblaApi) {
-      const interval = setInterval(() => {
-        emblaApi.scrollNext();
-      }, 5000);
+  // useEffect(() => {
+  //   if (emblaApi) {
+  //     const interval = setInterval(() => {
+  //       emblaApi.scrollNext();
+  //     }, 5000);
 
-      const onSelectCallback = () => {
-        setCurrentIndex(emblaApi.selectedScrollSnap());
-      };
+  //     const onSelectCallback = () => {
+  //       setCurrentIndex(emblaApi.selectedScrollSnap());
+  //     };
 
-      emblaApi.on('select', onSelectCallback);
+  //     emblaApi.on('select', onSelectCallback);
 
-      return () => {
-        clearInterval(interval);
-        emblaApi.off('select', onSelectCallback);
-      };
-    }
-  }, [emblaApi]);
+  //     return () => {
+  //       clearInterval(interval);
+  //       emblaApi.off('select', onSelectCallback);
+  //     };
+  //   }
+  // }, [emblaApi]);
 
   if (!isMobile) {
     return (

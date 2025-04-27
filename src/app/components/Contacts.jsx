@@ -40,7 +40,7 @@ export default function Contacts() {
   };
 
   return (
-    <div className={styles.container}>
+    <div id="partnership" className={styles.container}>
                 <h2 className={styles.title}>Контакти</h2>
 
       <div className={styles.cardWrapper}>

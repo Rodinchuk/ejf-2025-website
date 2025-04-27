@@ -44,9 +44,9 @@ const Header = () => {
       </a>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
-            <li><a href="/" style={{ fontWeight: '900' }}>Про подію</a></li>
+            <li><a href="/" >Про подію</a></li>
 
-          <li><a href="/schedule">Розклад</a></li>
+          <li><a href="/schedule" style={{ fontWeight: '900' }}>Розклад</a></li>
           <li><a href="/speakers">Спікери</a></li>
         </ul>
       </nav>
@@ -63,8 +63,8 @@ const Header = () => {
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}>
         <button className={styles.closeButton} onClick={closeMenu}>✕</button>
         <ul>
-          <li><a href="/"style={{ fontWeight: '900' }} onClick={closeMenu}>Про подію</a></li>
-          <li><a href="/schedule" onClick={closeMenu}>Розклад</a></li>
+          <li><a href="/"  onClick={closeMenu}>Про подію</a></li>
+          <li><a href="/schedule" style={{ fontWeight: '900' }} onClick={closeMenu}>Розклад</a></li>
           <li><a href="/speakers" onClick={closeMenu}>Контакти</a></li>
           <li><a href="/#bot"><button className={styles.partnerButton} onClick={closeMenu}>Стати учасником</button></a></li>
           <li><a href="/#partnership"><button className={styles.partnerButton1} onClick={closeMenu}>Стати партнером</button></a></li>

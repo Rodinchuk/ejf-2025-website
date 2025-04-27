@@ -162,8 +162,25 @@
   text-align: center;
   flex-shrink: 0;
 }
+.partnerButton1 {
+  background: none;
+  color: white;
+  border: 3px solid white;
+  width: 20%;
+  padding: 0.7rem 1.2rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  flex-shrink: 0;
+}
 
 .partnerButton:hover {
+  transform: scale(1.1);
+}
+.partnerButton1:hover {
   transform: scale(1.1);
 }
 
@@ -212,6 +229,10 @@
 
 /* Стилі для кнопки у мобільному меню */
 .mobileMenu .partnerButton {
+  width: 100%;
+  margin-left: 0;
+}
+.mobileMenu .partnerButton1 {
   width: 100%;
   margin-left: 0;
 }

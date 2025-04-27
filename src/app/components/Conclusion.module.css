@@ -16,18 +16,25 @@
   top: -1px;
   left: 0;
   width: 100%;
-  height: 400px;
   transform: scale(-1);
 }
 
 .title {
   color: white;
-  font-size: 2.5rem;
+  font-size: 48px;
   font-weight: bold;
   margin-bottom: 1rem;
   font-family: 'Exo 2';
 }
-
+.conclusionlink{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  text-decoration: none;
+}
 .description {
   color: white;
   font-size: 1.2rem;
@@ -37,7 +44,7 @@
 
 .conclusionbutton {
   background: white;
-  color: #1e3a8a;
+  color: #111A94;
   font-size: 3rem;
   font-weight: bold;
   padding: 1rem 2rem;
@@ -45,6 +52,7 @@
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  font-family: 'Nunito', sans-serif !important;
 }
 
 .conclusionbutton a {
@@ -55,13 +63,36 @@
   transform: scale(1.05);
 }
 
+.conclusionpbutton {
+  border: 3px solid white;
+  background: none;
+  color: white; 
+  font-size: 40px;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  font-family: 'Nunito', sans-serif !important;
+}
+
+.conclusionWave{
+  height: 500px !important;
+}
+
+.conclusionpbutton a {
+  text-decoration: none;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width: 1024px) {
-  .conclusionbutton {
-    font-size: 2rem;
-  }
-  .conclusionWave {
-    height: 200px;
-  }
+  .conclusionpbutton {
+    font-size: medium;
+    border-radius: 13px;  }
+ 
 }
 
 @media (max-width: 480px) {
@@ -74,6 +105,10 @@
     margin: 0 auto 20px;
     display: block;
   }
+  .conclusionWave {
+    height: 300px !important; 
+  }
+
   .description {
     max-width: 90%;
     word-wrap: break-word;
@@ -110,6 +145,9 @@
     top: 27%;
     left: 0;
   }
+  .conclusionWave{
+    height: 400px !important; 
+  }
   .conclusionbutton{
     font-size: 2.5rem;
     border-radius: 30px;
@@ -145,13 +183,12 @@
   margin: 0;
 }
 .conclusioncontent{
-  top:10%;
+  top:50%;
   position: relative;
 }
 @media(min-width:1024px){
   
 .conclusioncontent{
-  top:150px;
   position: relative;
 }
 }
@@ -162,4 +199,108 @@
     font-size:medium;
     border-radius: 13px;
   }
+}
+@media (min-width: 1370px) {
+  .conclusionWave {
+    height: 500px !important; 
+  }
+}
+    
+@keyframes move1 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes move2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+.cball1{ 
+  left: -230px;
+  top: -430px;
+  position: absolute !important;
+  animation: move2 3s ease-in-out infinite;
+}
+.cball2{ 
+  left: -380px;
+  top: -50px;
+  position: absolute !important;
+  animation: move1 3s ease-in-out infinite;
+}
+.cball3{ 
+  left: -430px;
+  top: -60px;
+  position: absolute !important;
+  animation: move2 3s ease-in-out infinite;
+}
+.cball4{ 
+  left: -200px;
+  top: 90px;
+  position: absolute !important;
+  animation: move1 3s ease-in-out infinite;
+}
+.cball5{ 
+  left: 550px;
+  top: -300px;
+  position: absolute !important;
+  animation: move2 3s ease-in-out infinite;
+}
+.cball6{ 
+  left: 750px;
+  top: -40px;
+  position: absolute !important;
+  animation: move1 3s ease-in-out infinite;
+}
+.cball7{ 
+  left: 500px;
+  top: 90px;
+  position: absolute !important;
+  animation: move2 3s ease-in-out infinite;
+}      
+@media (max-width: 480px) {
+  .conclusionballs{
+    display: block;
+    position: absolute;
+    width: 420px;
+    height: 400px;
+    overflow: hidden;
+    top: 27%;
+    left: 0;
+  }
+  .cball1{ 
+    left: -100px;
+    top: -200px;
+    position: absolute !important;
+    animation: move2 3s ease-in-out infinite;
+  }
+  .cball2{ 
+    left: -150px;
+    top: -50px;
+    position: absolute !important;
+    animation: move1 3s ease-in-out infinite;
+  }
+  .cball3{ 
+    left: -200px;
+    top: -60px;
+    position: absolute !important;
+    animation: move2 3s ease-in-out infinite;
+  }
+  .cball4{ 
+    left: -100px;
+    top: 90px;
+    position: absolute !important;
+    animation: move1 3s ease-in-out infinite;
+  }
+  
+}
+
+.conclusionballs{
+  position: relative;
 }

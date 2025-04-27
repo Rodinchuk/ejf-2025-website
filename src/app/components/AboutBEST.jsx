@@ -61,13 +61,14 @@ export default function AboutBEST() {
             <span className={styles.statNumber}>84</span>
             <span className={styles.statLabel}>осередків</span>
           </div>
-          <div className={styles.statItem}></div>
+          <div className={styles.statItem}>
             <span className={styles.statNumber}>30</span>
             <span className={styles.statLabel}>країн</span>
           </div>
           <div className={styles.statItem}>
             <span className={styles.statNumber}>36</span>
             <span className={styles.statLabel}>років досвіду</span>
+          </div>
           </div>
           </div>
         </div>

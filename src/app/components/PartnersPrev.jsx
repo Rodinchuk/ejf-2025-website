@@ -1,4 +1,3 @@
-import react from 'react';
 import './PartnersPrev.css';
 import waveUp from "../../../public/images/bg-hero.png";
 import Image from "next/image";

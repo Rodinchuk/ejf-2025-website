@@ -1,0 +1,201 @@
+.desktopContainer {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  height: 100%;
+}
+
+.desktopCard {
+  display: flex;
+  gap: 25px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  min-height: 400px !important;
+  margin-top: 10%; 
+  margin-left: 20px;
+}
+
+.desktopContent {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #111A94;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 45rem;
+  height: 31.5rem;
+}
+
+.imageContainer {
+  flex: 0 0 475px;
+  margin-right: -6rem;
+  z-index: 2;
+  position: relative;
+}
+
+.image {
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.mobileContainer {
+  position: relative;
+  padding: 1rem;
+}
+
+.embla {
+  overflow: hidden;
+}
+
+.emblaContainer {
+  display: flex;
+}
+
+.emblaSlide {
+  margin-top: 20%;
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 100%;
+}
+
+.mobileCard {
+  margin: 0 1rem;
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid #0000FF;
+  overflow: hidden;
+  padding: 1rem;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  display: block;
+  flex-shrink: 0;
+}
+
+.mobileContent {
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  color: #111A94;
+  font-family: 'Exo 2', sans-serif;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+}
+
+.role {
+  color: #257BFC;
+  margin-bottom: 1rem;
+  margin-top: 0rem;;
+}
+
+.description {
+  color: #767676;
+  line-height: 1.6;
+  flex: 1;
+  display: flex;
+  /* align-items: flex-end; */
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0000FF;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.desktopButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background:none;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.prevButton {
+  left: -0px;
+}
+
+.nextButton {
+  right: -0px;
+}
+
+.arrow {
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 769px) {
+  .name {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .role {
+    font-size: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1.45rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktopCard {
+    flex-direction: column;
+    min-height: 500px;
+  }
+  
+  .imageContainer {
+    flex: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .role {
+    font-size: 1rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+}

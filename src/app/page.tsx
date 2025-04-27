@@ -16,44 +16,7 @@ import Conclusion from './components/Conclusion';
 import './globals.css';
 
 export default function Home() {
-  // useEffect(() => {
-  //   const lenis = new Lenis({
-  //     duration: 2.5,
-  //     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
-  //     touchMultiplier: 2 
-  //   }); 
-  //   lenis.on('scroll', (e: any) => {
-  //     console.log(e) 
-  //   });
-  //   function raf(time: number) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-
-  //   requestAnimationFrame(raf);
-
-  //   return () => {
-  //     lenis.destroy(); // знищуємо при демонтажі
-  //   };
-  // }, []);
-  // useEffect(() => {
-  //   const lenis = new Lenis({
-  //     duration: 3.5,  
-  //     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  //     touchMultiplier: 2, 
-  //   });
   
-  //   function raf(time: number) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-  
-  //   requestAnimationFrame(raf);
-  
-  //   return () => {
-  //     lenis.destroy();
-  //   };
-  // }, []);
   
   return (
     <>

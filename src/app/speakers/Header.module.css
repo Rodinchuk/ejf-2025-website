@@ -1,0 +1,275 @@
+/* Загальні стилі для хедера */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+ 
+  padding: 15px;
+  background-color: #111a94;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  z-index: 1000;
+}
+.headerContainer{
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  max-width: 1290px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+/* Логотип */
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  transition: transform 0.5s ease;
+}
+
+.logo.spin {
+  transform: rotate(360deg);
+}
+
+/* Навігація */
+.nav {
+  display: flex;
+  justify-content: center;
+  flex: 1; 
+}
+
+.navList {
+
+  list-style: none;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  margin: 0;
+  padding-inline: 10px;
+
+}
+
+.navList li {
+  text-align: center;
+  font-family:'Nutino';
+  flex-shrink: 0;
+}
+
+.navList li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  font-family: 'Nunito';
+  flex-shrink: 0;
+}
+
+.menuIcon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #111a94;
+  padding: 1rem 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.mobileMenu.open {
+  transform: translateX(0);
+}
+
+.mobileMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.mobileMenu ul li {
+  margin: 1.5rem 0;
+}
+
+.mobileMenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .menuIcon {
+    display: flex;
+    margin-right: 10%;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+}
+
+.partnerButton {
+  background-color: white;
+  color: #111a94;
+  border: none;
+  width: 20%;
+  padding: 0.7rem 1.2rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  flex-shrink: 0;
+}
+.partnerButton1 {
+  background: none;
+  color: white;
+  border: 3px solid white;
+  width: 20%;
+  padding: 0.7rem 1.2rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.partnerButton:hover {
+  transform: scale(1.1);
+}
+.partnerButton1:hover {
+  transform: scale(1.1);
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #111a94;
+  padding: 1rem 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobileMenu.open {
+  transform: translateX(0);
+}
+
+.mobileMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.mobileMenu ul li {
+  margin: 1.5rem 0;
+}
+
+.mobileMenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Стилі для кнопки у мобільному меню */
+.mobileMenu .partnerButton {
+  width: 100%;
+  margin-left: 0;
+}
+.mobileMenu .partnerButton1 {
+  width: 100%;
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .menuIcon {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+}
+.interButton{
+  border: 3px solid #257BFC;
+  border-radius: 15px;
+  padding: 0.6rem 1.2rem;
+  background: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  flex-shrink: 0;
+}
+/* Десктопний варіант кнопок */
+.desktopOnly {
+  display: inline-block;
+}
+
+/* Мобільна версія - приховати */
+@media (max-width: 768px) {
+  .desktopOnly {
+    display: none;
+  }
+}

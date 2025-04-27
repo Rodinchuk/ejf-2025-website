@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';

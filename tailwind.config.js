@@ -7,3 +7,14 @@ module.exports = {
   plugins: [],
 }
 
+module.exports = {
+  theme: {
+    extend: {
+      scrollBehavior: ['responsive'],
+    },
+  },
+  variants: {
+    scrollBehavior: ['responsive'],
+  },
+}
+

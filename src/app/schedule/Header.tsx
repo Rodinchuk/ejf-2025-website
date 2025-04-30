@@ -88,9 +88,9 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <button className={styles.partnerButton} onClick={closeMenu}>
-                <Link href="/#bot">Стати учасником</Link>
-              </button>
+            <button onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>
+          Стати учасником
+        </button>
             </li>
             <li>
               <button className={styles.partnerButton1} onClick={closeMenu}>

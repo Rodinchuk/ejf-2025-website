@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 import TeamSwiper from './components/TeamSwiper';
 import GallerySwiper from './components/Gallery';
 import Conclusion from './components/Conclusion';
-
+// import SmoothScroll from './components/SmoothScroll';
 import './globals.css';
 
 export default function Home() {

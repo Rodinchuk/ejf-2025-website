@@ -3,7 +3,7 @@
     background: linear-gradient(180deg, #111A94 , #257BFC 90%);
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 0px;
 }
 
 .team-title {
@@ -148,10 +148,10 @@
 }
 
 .swiper-button-prev{
-    margin-left: -6%;
+    margin-left: -9%;
 }
 .swiper-button-next{
-    margin-right: -6%;
+    margin-right: -9%;
 }
 
 @media (max-width: 480px) {

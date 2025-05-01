@@ -1,6 +1,6 @@
 /* CSS файл для компонента BestLviv */
 .section{
-  transform: translateY(-23%);
+  transform: translateY(-20%);
   background-color: #257BFC;
   height: 1200px;  
 
@@ -17,10 +17,10 @@
 }
 @media (max-width: 768px) {
   .section {
-    transform: translateY(-18%);
+    transform: translateY(-1%);
   }
   .container {
-    transform: translateY(50%);
+    transform: translateY(0%);
   }
 }
 .title {

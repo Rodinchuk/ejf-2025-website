@@ -115,7 +115,6 @@
 }
 
 .mobileMenu ul li a {
-  color: white;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -229,6 +228,7 @@
 
 /* Стилі для кнопки у мобільному меню */
 .mobileMenu .partnerButton {
+  color: #111a94;
   width: 100%;
   margin-left: 0;
 }
@@ -504,6 +504,7 @@
 
 /* Стилі для кнопки у мобільному меню */
 .mobileMenu .partnerButton {
+  color: #111a94 !important;
   width: 100%;
   margin-left: 0;
 }
@@ -546,3 +547,17 @@
     display: none;
   }
 }  
+.partnerButton {
+  background-color: white;
+  color: #111a94;
+  border: none;
+  width: 20%;
+  padding: 0.7rem 1.2rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  flex-shrink: 0;
+}

@@ -44,6 +44,7 @@
 }
 
 .conclusionbutton {
+  border:3px solid white;
   background: white;
   color: #111A94;
   font-size: 3rem;
@@ -91,6 +92,8 @@
 
 @media (max-width: 1024px) {
   .conclusionpbutton {
+    border:3px solid white;
+
     font-size: medium;
     border-radius: 13px;  }
  
@@ -150,6 +153,7 @@
     height: 400px !important; 
   }
   .conclusionbutton{
+    border:3px solid white;
     font-size: 2.5rem;
     border-radius: 30px;
    }

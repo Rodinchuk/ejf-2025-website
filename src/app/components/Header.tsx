@@ -84,18 +84,17 @@ const Header = () => {
             </li>
             <li>
               <Link href="/speakers" onClick={closeMenu}>
-                Контакти
+                Спікери
               </Link>
             </li>
-            <li>
-              <button className={styles.partnerButton} onClick={closeMenu}>
-                <Link href="/#bot">Стати учасником</Link>
+            <li> 
+              <button className={styles.partnerButton} onClick={closeMenu} >
+                <Link style={{ color: '#111a94', fontFamily: 'Nunito'}} href="/#bot">Стати учасником</Link>
               </button>
             </li>
             <li>
               <button className={styles.partnerButton1} onClick={closeMenu}>
-                <Link href="/#partnership">Стати партнером
-                </Link>
+                <Link style={{ fontFamily: 'Nunito'}} href="/#partnership">Стати партнером </Link>
               </button>
             </li>
           </ul>

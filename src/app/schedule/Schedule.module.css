@@ -1,0 +1,55 @@
+.scheduleSection {
+    padding: 40px 20px;
+    margin-top: 5%;
+  }
+  
+  .scheduleWrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 10%;
+  }
+  
+  .day {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+  
+  .day h2 {
+    font-size: 64px;
+    margin-bottom: 30px;
+    color: #111A94;
+    font-family: 'Exo 2', sans-serif;
+  }
+
+  
+  .day ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .day li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom: 10px;
+  }
+  
+  .day li span {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #000;
+  }
+  .eventies{
+    font-size: 21px;
+  }
+  @media (max-width: 768px) {
+    .day h2 {
+      font-size: 40px;
+    }
+    .eventies{
+        font-size: 18px !important;
+    }
+  }

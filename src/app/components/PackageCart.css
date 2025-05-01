@@ -1,0 +1,147 @@
+/* Загальний стиль картки */
+.package-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 24px;
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    max-width: 300px;
+    width: 80%;
+  }
+  .package-card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+  .package-card.selected {
+    background-color: linear-gradient(180deg, #1d4ed8);
+    border: 3px solid #111A94;
+    border-radius: 24px;
+  }
+  
+  .package-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .package-header h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000; 
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  .package-header .price {
+    font-size: 1.8em;
+    color: #257BFC; 
+    font-weight: bolder;
+    margin-top: 10px;
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  .info-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .info-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+  }
+  
+  .feature-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #374151; /* Темно-сірий */
+    margin-bottom: 8px;
+  }
+  
+  .feature-list .bullet {
+    display: inline-block;                  
+    color: #2563eb;   
+    transform: rotate(45deg);    
+    margin-right: 8px;           
+  }
+  
+  .basic-note {
+    font-size: 1.2rem;
+    color: #0C0C1266;
+    font-weight: 500;
+    text-align: left;
+    padding: 8px 0;
+    margin-bottom: 5px;
+    background: none;
+    border-radius: 8px;
+  }
+  
+  .cartbutton {
+    display: flex;
+    width: 55%;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 16px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    height: 110%;
+    font-family: 'Nutino', sans-serif;
+    background: linear-gradient(180deg, #257BFC,#111A94);
+    color:#e6e6e6;
+  }
+  .cartbutton.selected{
+    background: #ffffff;
+    border:1px solid#257BFC;
+    color: #257BFC;
+    height: 110%;
+  }
+  .cartsvg{
+    margin-right: 5px;
+  }
+  .cartsvg.selected{
+    display: none;
+  }
+  button.default {
+    background: #fff; /* Синій */
+    color: #2563eb;
+  }
+  
+  button.default:hover {
+    background: #1d4ed8; /* Темно-синій */
+  }
+  
+  button.secondary {
+    background: #1e3a8a; /* Світло-сірий */
+    color: #1e3a8a; /* Темно-синій */
+  }
+  
+  button.secondary:hover {
+    background: #d1d5db; /* Трохи темніше сірий */
+  }
+  @media (max-width: 768px) {
+  .cartbutton.selected{
+    background: #ffffff;
+    border:1px solid#257BFC;
+    color: #257BFC;
+    height: 110%;
+  }
+  }

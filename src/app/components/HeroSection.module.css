@@ -1,0 +1,462 @@
+.careerBanner {
+  position: relative;
+  background: linear-gradient(180deg, #257bfc, #111a94);
+  color: white;
+  padding: 4rem 0 0;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 5;
+}
+
+.content {
+  position: relative;
+  max-width: 1290px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding-bottom: 440px;
+  padding-top: 50px;
+  padding-left: 50px;
+  z-index: 5;
+}
+
+.vectorSection {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: 2px; /* Піднімаємо наполовину висоти */
+}
+
+.vectorImage {
+  width: 100%;
+  height: 400px !important;
+  object-fit: fill;
+  display: block;
+  border-radius: 0%;
+  margin-top: 0;
+  padding: calc(4rem - 30px) 0 -30px;
+  position: absolute;
+  bottom: -1px;
+  height: 30%;
+  z-index: 10;
+}
+@media(max-width: 768px) {
+  .vectorImage {
+  object-fit: cover;
+    height: 300px !important;
+    top: 90%;
+    background: linear-gradient(to top, #111a94 80%, transparent 20%);
+  }}
+
+
+.title {
+  font-size: 96px;
+  font-family: "Exo 2";
+  font-weight: 700;
+  margin: 0%;
+}
+
+.subtitle {
+  font-size: 96px;
+  margin: 0%;
+  font-family: "Exo 2";
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.highlightText {
+  font-size: 20px;
+  width: 55%;
+  word-wrap: break-word;
+  margin-bottom: 2rem;
+  color: #55a7ff;
+}
+.universities {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  max-width: fit-content; /* або просто видаліть max-width */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal; /* або 'nowrap' якщо хочете уникнути переносу слів */
+}
+
+.universities {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+.bubbles {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-bottom: 170px;
+  }
+  .vectorSection {
+    height: 60px;
+    margin-top: -35px;
+  }
+  .vectorImage{
+    height: 200px;
+  top:90%;
+  background: linear-gradient(to top, #111A94 80%, transparent 20%);
+
+  }
+
+  .title {
+    font-size: 65px;
+  }
+  .subtitle {
+    font-size: 65px;
+  }
+  .highlightText {
+    font-size: 15px;
+  }
+
+  .separator {
+    height: 1px;
+    width: 80%;
+    background: #2a5dcf;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding-bottom: 50px;
+  }
+
+  .vectorSection {
+    height: 50px;
+    margin-top: -29px;
+  }
+
+  .title {
+    font-size: 45px;
+    align-self: flex-start;
+  }
+  .subtitle {
+    font-size: 45px;
+  }
+  .sutitle {
+    font-size: 45px;
+  }
+  .highlightText {
+    font-size: 15px;
+  }
+}
+
+.sideImage {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.sideImage:hover {
+  transform: scale(1.1);
+}
+.containerhero{
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .careerBanner {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 0%;
+  }
+  .highlightText{
+    margin-left: 10%;
+  }
+  .universities {
+    font-size: 80%;
+    margin-bottom: 250px;
+  }
+  .imageContainer {
+    position: static;
+    flex-direction: row;
+    gap: 10px;
+    transform: none;
+    justify-content: center;
+    margin-top: 20px;
+    display: none;
+  }
+
+.containerhero{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10%;
+  z-index: 5;
+}
+.separator{
+  display: none;
+}
+.content{
+  padding-left: 0;
+}
+  .sideImage {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding-top: 100px;
+  
+  }
+
+  .imageContainer {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .careerBanner {
+    height: 100%;
+  }
+  .sideImage {
+    width: 120px;
+  }
+
+  .sideImage {
+    width: 100px;
+  }
+  
+ 
+}
+
+.briefcase {
+  width: 100%;
+  height: 100%;
+}
+.miniball1 {
+  position: absolute;
+  left: 92%;
+  top: 57%;
+  animation: move1 3s ease-in-out infinite;
+}
+
+@keyframes move1 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.opos{
+  display: none;
+}
+
+.miniball2 {
+  position: absolute;
+  left: 40%;
+  top: 65%;
+  animation: move1 3s ease-in-out infinite;
+}
+
+.miniball3 {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  animation: move1 3s ease-in-out infinite;
+}
+.microball1{
+  display: none;
+}
+.microball2{
+  display: none;
+}
+.microball3{
+  display: none;
+}
+.microball4{
+  display: none;
+}
+
+.opo2{
+    position: absolute;
+    width: 120px;
+    left: 25%;
+    top: 40%;
+    animation: move2 3s ease-in-out infinite;
+}
+.opo3{
+  position: absolute;
+  width: 220px;
+  left: 72%;
+  top: 65%;
+  animation: move2 3s ease-in-out infinite;
+}
+.opo1{
+  position: absolute;
+  width: 240px;
+  left: 40%;
+  top: 5%;
+  animation: move2 3s ease-in-out infinite;
+}
+.vectorContainer{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+  
+}
+@keyframes move2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.imageContainer{
+  position: absolute;
+  width: 68%;
+  left: 38%;
+  top: 1px;
+  border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .briefcase{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .bubbles{
+    position: absolute;
+    display: block;
+    width: 80vw;
+    height: 70vh; 
+    overflow: hidden;
+    top: 15%;
+    left: 90px;
+  }
+  .microball1{
+    display: block;
+    position: absolute;
+    left: 90%;
+    top:25%;
+  
+    animation: move1 3s ease-in-out infinite;
+    z-index: 1 !important;
+  }
+  .microball2{
+    display: block;
+    position: absolute;
+    left: -10%;
+    top: 35%;
+    animation: move2 3s ease-in-out infinite;
+    z-index: 1 !important;
+  }
+  .microball3{
+    display: block;
+    position: absolute;
+    left: -3%;
+    top: 47%;
+    animation: move1 3s ease-in-out infinite;
+    z-index: 1 !important;
+  }
+  .microball4{
+    display: block;
+    position: absolute;
+    left: -10%;
+    top: 7%;
+    animation: move1 3s ease-in-out infinite;
+    z-index: 1 !important;
+    width: 90px;
+    height: 90px;
+  }
+
+.uni {
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+}
+
+@media (max-width: 480px) {
+  .briefcase{
+    display: none;
+  }
+  .bubbles {
+    position: absolute;
+    display: block;
+    width: 100vw; /* Робимо ширину рівною ширині вікна */
+    height: 65vh; /* Робимо висоту рівною висоті вікна */
+    overflow: hidden; /* Обрізаємо все, що виходить за межі */
+    top: 15%;
+    left: 0;
+}
+
+}
+
+
+
+.uni {
+  display: flex;
+  align-items: center;
+}
+
+.universities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.separator {
+  height: 40px;
+  width: 1px;
+  background: #2a5dcf;
+  margin: 0 1.5rem;
+}
+
+.ejfdate {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.location,
+.calendar {
+  flex-shrink: 0;
+}
+@media (max-width: 1024px) {
+  .textContainer {
+    text-align: left;
+    margin-left: 10%;
+    z-index: 5;
+  }
+.opos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  gap: 10px;
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.opos > *:nth-child(-n+2) {
+  flex: 0 0 auto;
+}
+
+.opos > *:nth-child(n+3) {
+  flex: 0 0 auto;
+}
+.oport{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  background: #257bfc;
+  border-radius: 12px;
+  padding: 10px;
+}
+}

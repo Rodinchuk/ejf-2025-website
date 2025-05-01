@@ -1,0 +1,172 @@
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1a237e;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Дві колонки */
+  gap: 4rem 20rem; /* Збільшений відступ між колонками */
+  align-items: start;
+}
+
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-icon img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  color: #767676;
+  margin: 0;
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+
+.card-toggle img {
+  width: 24px;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.overlay-image {
+  position: absolute;
+  left: 50%;
+  top: 250px;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+  z-index: 0;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.overlay-image:hover {
+  width: 450px;
+  height: 450px;
+  transform: translate(-50%, -55%) rotate(20deg);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr; 
+    gap: 1.5rem; 
+  }
+
+  .card {
+    min-height: auto;
+    padding: 1rem;
+    max-width: 100%; /* На мобільних картки займають всю ширину */
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .overlay-image {
+    display: none;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Додаткові стилі для розміщення карток у три ряди по два елементи */
+@media (min-width: 769px) {
+  .cards-container {
+    grid-template-rows: repeat(3, auto); /* Три ряди */
+  }
+
+  .card:nth-child(odd) {
+    justify-self: start; /* Ліва сторона */
+  }
+
+  .card:nth-child(even) {
+    justify-self: end; /* Права сторона */
+  }
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  border: 3px solid #1a237e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 1.5rem;
+  min-height: 100px; /* Збільшена висота карток */
+  max-width: 450px; /* Обмеження максимальної ширини */
+  overflow: hidden;
+  word-wrap: break-word; /* Перенесення тексту на новий рядок */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  max-height: 100px; /* Початкова висота картки */
+  transition: max-height 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card.card-expanded {
+  max-height: 500px;
+  border: 3px solid #257BFC; 
+}
+
+.card.card-collapsed {
+  max-height: 100px;
+  border: 3px solid #257BFC;
+}
+
+.card-description {
+  margin-top: 1rem;
+  color: #666;
+  line-height: 1.6;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  word-wrap: break-word; /* Перенесення тексту на новий рядок */
+  font-size: 0.7rem; /* Менший розмір тексту */
+  max-width: 95%; /* Вужчий текст */
+  opacity: 0; /* Початкова прозорість тексту */
+  transition: opacity 0.3s ease 0.2s; /* Анімація появи тексту з затримкою */
+}
+.card.card-expanded .card-description {
+  opacity: 1; /* Показуємо текст при розгортанні */
+}
+
+.card.card-collapsed .card-description {
+  opacity: 0; /* Ховаємо текст при згортанні */
+}

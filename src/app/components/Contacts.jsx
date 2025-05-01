@@ -1,0 +1,133 @@
+"use client"
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import styles from "./Contacts.module.css";
+
+export default function Contacts() {
+  const [showModal, setShowModal] = useState(false);
+  const [formData, setFormData] = useState({
+    company: "",
+    name: "",
+    position: "",
+    phone: "",
+    email: ""
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_7xshe0s",
+        "template_lap52fe",
+        formData,
+        "nH1slg9lPzjgOixSC"
+      )
+      .then(
+        () => {
+          alert("Дякуємо! Заявка надіслана.");
+          setShowModal(false);
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          alert("Виникла помилка. Спробуйте ще раз.");
+        }
+      );
+  };
+
+  return (
+    <div id="partnership" className={styles.container}>
+                <h2 className={styles.title}>Контакти</h2>
+
+      <div className={styles.cardWrapper}>
+        <div className={`${styles.imageWrapper} hidden md:block`}>
+          <img
+            src="./images/maksym.jpg"
+            alt="Максим Сеньків"
+            className={styles.image}
+          />
+        </div>
+
+        <div className={styles.contactInfo}>
+          <div className={styles.firstBlock}>
+          <p className={styles.name}>Сеньків Максим</p>
+          <p className={styles.role}>головний організатор</p>
+          <div className={styles.divider}></div>
+          <div className={styles.details}>
+            <p><img src="./images/phone.svg" alt="phone" className={styles.icon} />
+            +380 66 638 5322</p>
+            <p>          <img src="./images/mail.svg" alt="mail" className={styles.icon} />
+            maksym.senkiv@best-eu.org</p>
+          </div></div>
+          <p className={styles.description}>
+            Бажаєте долучитися до заходу як партнер? Заповніть форму і ми обов'язково з Вами зв'яжемось!
+          </p>
+          <button
+            onClick={() => setShowModal(true)}
+            className={`${styles.primaryButton} text-center`}
+          >
+            Стати партнером
+          </button>
+        </div>
+      </div>
+
+      {showModal && (
+        <div className={styles.modalOverlay}>
+          <div className={styles.modalContent}>
+            <button
+              onClick={() => setShowModal(false)}
+              className={styles.closeButton}
+            >
+              ✕
+            </button>
+            <h3 className={styles.modalTitle}>Стати партнером ІЯК 2025</h3>
+            <form onSubmit={sendEmail} className={styles.form}>
+              <input
+                type="text"
+                name="company"
+                placeholder="Назва компанії"
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                name="name"
+                placeholder="Ваше ім'я та прізвище"
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                name="position"
+                placeholder="Ваша посада і контакт"
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Номер телефону"
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                onChange={handleChange}
+                required
+              />
+              <button type="submit" className={`${styles.submitButton} text-center`}>
+                Стати партнером
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

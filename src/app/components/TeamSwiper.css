@@ -40,6 +40,15 @@
     }
   }
 
+  .team-photo {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transform: translateY(50%);
+}
 .team-swiper {
     width: 100%;
     padding-bottom: 40px;
@@ -72,16 +81,18 @@
         max-width: 250px;
         padding: 10px;
     }
-}
-
+    
 .team-photo {
     position: relative;
-    width: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
     transform: translateY(50%);
 }
+}
+
 
 .team-name {
     font-weight: bold;
@@ -202,17 +213,19 @@
         display: flex;
 
         flex-direction: column;
-        width: 300px;
+        width: 350px;
         height:350px;
         justify-content: flex-end;
     }
     .bsball1{ 
+        max-width: 60px;
+        max-height: 60px;
         left: 3px;
         top: 40%;
         position: absolute !important;
         animation: move2 3s ease-in-out infinite;
     }
-    .bsball2{ 
+    .bsball2{
         position: absolute !important;
         left: 9%;
         top: 28%;
@@ -225,6 +238,8 @@
         animation: move2 3s ease-in-out infinite;
     }
     .bsball4{ 
+        max-width: 60px;
+        max-height: 60px;
         position: absolute !important;
         left: 90%;
         top: 30%;
@@ -232,6 +247,8 @@
     }
     @media (max-width: 768px) {
         .bsball1{ 
+            max-width: 45px;
+            max-height: 45px;
             left: 3px;
             top: 55%;
             position: absolute !important;
@@ -239,19 +256,24 @@
         }
         .bsball2{ 
             max-width: 60px;
+            max-height: 60px;
             left: -3%;
             animation: move1 3s ease-in-out infinite;
         }
         .bsball3{ 
+            max-width: 60px;
+            max-height: 60px;
             position: absolute !important;
-            left: 97%;
+            left: 95%;
             top: 30%;
             animation: move2 3s ease-in-out infinite;
         }
         .bsball4{ 
+            max-width: 45px;
+            max-height: 45px;
             position: absolute !important;
             left: 95%;
-            top: 70%;
+            top: 65%;
             animation: move1 3s ease-in-out infinite;
         }
     }

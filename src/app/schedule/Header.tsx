@@ -84,11 +84,11 @@ const Header = () => {
             </li>
             <li>
               <Link href="/speakers" onClick={closeMenu}>
-                Контакти
+                Спікери
               </Link>
             </li>
             <li>
-            <button onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>
+            <button onClick={scrollToPartik} className={styles.partnerButton}>
           Стати учасником
         </button>
             </li>

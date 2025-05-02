@@ -148,10 +148,10 @@
 }
 
 .swiper-button-prev{
-    margin-left: -9%;
+    margin-left: -6.5%;
 }
 .swiper-button-next{
-    margin-right: -9%;
+    margin-right: -6.5%;
 }
 
 @media (max-width: 480px) {
@@ -280,4 +280,15 @@
 .wave-up{ 
     position: relative;
     z-index: 3;
+}
+@media (min-width: 2000px) {
+    .wave-up{ 
+        width: 100%;
+    }
+    .swiper-button-prev{
+        margin-left: -50%;
+    }
+    .swiper-button-next{
+        margin-right: -50%;
+    }
 }

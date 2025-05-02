@@ -14,8 +14,8 @@
   overflow: hidden;
   position: relative;
   min-height: 400px !important;
-  margin-top: 5%; 
-  margin-left: 2%;
+  margin-top: 10%; 
+  margin-left: 3%;
 }
 
 .desktopContent {
@@ -197,5 +197,76 @@
   
   .description {
     font-size: 1rem;
+  }
+}
+@media (min-width: 2560px) {
+  .desktopContainer {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+
+  .desktopCard {
+    gap: 40px;
+    min-height: 600px !important;
+    margin-top: 20%;
+    margin-left: 5%;
+  }
+
+  .desktopContent {
+    padding: 3rem;
+    width: 60rem;
+    height: 40rem;
+  }
+
+  .imageContainer {
+    flex: 0 0 600px;
+    margin-right: -8rem;
+  }
+
+  .image {
+    width: 112%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .name {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .role {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.75rem;
+    line-height: 2;
+  }
+
+  .mobileCard {
+    padding: 2rem;
+    min-height: 600px;
+  }
+
+  .mobileImage {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 2rem;
+  }
+
+  .mobileContent {
+    font-size: 1.5rem;
+  }
+
+  .button,
+  .desktopButton {
+    width: 60px;
+    height: 60px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
   }
 }

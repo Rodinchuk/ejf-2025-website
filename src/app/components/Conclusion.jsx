@@ -13,9 +13,10 @@ const Conclusion = () => {
         alt="img"
         fill 
         className={styles.conclusionWave}
-        style={{ objectFit: 'cover', objectPosition: 'center' }} 
+        style={{ objectFit: 'relative', objectPosition: 'center' }} 
         priority 
         />
+        
         
       </div>
       <div className={styles.conclusioncontent}>

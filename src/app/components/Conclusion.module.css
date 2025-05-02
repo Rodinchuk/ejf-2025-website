@@ -11,7 +11,11 @@
   z-index: 5;
   /* transform: translateY(-50%); */
 }
-
+@media (min-width: 2000px) {
+  .conclusion {
+    height: 80%;
+  }
+}
 .conclusionWave {
   position: absolute;
   top: -1px;
@@ -308,4 +312,10 @@
 
 .conclusionballs{
   position: relative;
+}
+@media (min-width: 2000px) {
+  .conclusionWave {
+    object-fit:fill;
+    width: 100%;
+  }
 }

@@ -15,10 +15,14 @@
     border-radius: 24px;
     background-color: #fff;
 }
-.partner{
-    width: auto;
+.partner {
+    flex: 1 1 auto; /* Пропорційне масштабування */
+    max-width: 25%;
     height: auto;
     padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .pbackground{
     background: linear-gradient(0deg, #111A94 0%, #257BFC 100%);

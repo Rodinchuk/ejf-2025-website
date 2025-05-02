@@ -18,6 +18,10 @@ export default function PartnersPrev(){
                 <img src="./images/p10.png" className='partner'></img>
                 <img src="./images/p15.png" className='partner'></img>
                 <img src="./images/kpmg.png" className='partner'></img>
+                <img src="./images/bilfinger.png" className='partner'></img>
+                <img src="./images/renesas.png" className='partner'></img>
+
+
 
             </div>
         </section>

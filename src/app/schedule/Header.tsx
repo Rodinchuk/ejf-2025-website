@@ -50,9 +50,9 @@ const Header = () => {
                 Розклад
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/speakers">Спікери</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <button onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>
@@ -82,11 +82,11 @@ const Header = () => {
                 Розклад
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/speakers" onClick={closeMenu}>
                 Спікери
               </Link>
-            </li>
+            </li> */}
             <li>
             <button onClick={scrollToPartik} className={styles.partnerButton}>
           Стати учасником

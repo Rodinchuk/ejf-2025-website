@@ -46,7 +46,7 @@ export default function Contacts() {
       <div className={styles.cardWrapper}>
         <div className={`${styles.imageWrapper} hidden md:block`}>
           <img
-            src="./images/maksym.jpg"
+            src="./images/maksym.png"
             alt="Максим Сеньків"
             className={styles.image}
           />

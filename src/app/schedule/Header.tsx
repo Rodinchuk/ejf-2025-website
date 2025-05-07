@@ -55,12 +55,12 @@ const Header = () => {
             </li> */}
           </ul>
         </nav>
-        <button onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>
+        {/* <button onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>
           Стати учасником
-        </button>
-        <button onClick={scrollToPartnership} className={`${styles.partnerButton1} ${styles.desktopOnly}`}>
-          Стати партнером
-        </button>
+        </button> */}
+         <Link className={`${styles.partnerButton1} ${styles.desktopOnly}`} style={{ fontFamily: 'Nunito', textDecoration: 'none'}} href="/#partnership">
+            Стати партнером
+          </Link>
 
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <div className={styles.bar}></div>
@@ -87,11 +87,11 @@ const Header = () => {
                 Спікери
               </Link>
             </li> */}
-            <li>
+            {/* <li>
             <button onClick={scrollToPartik} className={styles.partnerButton}>
           Стати учасником
-        </button>
-            </li>
+        </button> */}
+            {/* </li> */}
             <li>
               <button className={styles.partnerButton1} onClick={closeMenu}>
                 <Link href="/#partnership">Стати партнером

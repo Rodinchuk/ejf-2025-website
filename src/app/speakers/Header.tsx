@@ -15,14 +15,14 @@ const Header = () => {
   };
 
   const scrollToPartik = () => {
-    document.getElementById("bot")?.scrollIntoView({ behavior: "smooth" });
+    window.location.href = '/#bot';
   };
   const scrollToPartnership = () => {
-    document.getElementById("partnership")?.scrollIntoView({ behavior: "smooth" });
+    window.location.href = '/#partnership';
   };
 
   const scrollToHome = () => {
-    document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("/home")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -53,15 +53,17 @@ const Header = () => {
             {/* <li>
               <Link href="/speakers" style={{ fontWeight: "900" }}>Спікери</Link>
             </li> */}
-          </ul>
-        </nav>
-        <button onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>
+         
+        {/* <button onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>
           Стати учасником
-        </button>
-        <button onClick={scrollToPartnership} className={`${styles.partnerButton1} ${styles.desktopOnly}`}>
-          Стати партнером
-        </button>
-
+        </button> */}
+        <li>
+          <Link className={`${styles.partnerButton1} ${styles.desktopOnly}`} style={{ fontFamily: 'Nunito'}} href="/#partnership">
+            Стати партнером
+          </Link>
+        </li>
+        </ul>
+        </nav>
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
@@ -87,11 +89,11 @@ const Header = () => {
                 Спікери
               </Link>
             </li> */}
-            <li>
+            {/* <li>
             <button className={styles.partnerButton} onClick={closeMenu} >
                 <Link style={{ color: '#111a94', fontFamily: 'Nunito'}} href="/#bot">Стати учасником</Link>
               </button>
-            </li>
+            </li> */}
             <li>
               <button className={styles.partnerButton1} onClick={closeMenu}>
                 <Link style={{ fontFamily: 'Nunito'}} href="/#partnership">Стати партнером </Link>

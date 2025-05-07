@@ -24,7 +24,7 @@ const Conclusion = () => {
         <h2 className={styles.title}>Інвестуй у майбутнє!</h2>
         <p className={styles.description}></p>
         <a href="#partnership" className={styles.conclusionlink}>
-        <button className={styles.conclusionbutton}>Стати учасником</button>
+        {/* <button className={styles.conclusionbutton}>Стати учасником</button> */}
         <button className={styles.conclusionpbutton}>Стати партнером</button>
         
         </a>

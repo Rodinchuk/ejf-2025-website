@@ -281,7 +281,7 @@
     position: relative;
     z-index: 3;
 }
-@media (min-width: 2000px) {
+@media (min-width: 1500px) {
     .wave-up{ 
         width: 100%;
     }

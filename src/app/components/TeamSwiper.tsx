@@ -11,17 +11,17 @@ import Image from "next/image";
 
 export default function TeamSwiper() {
     const teamMembers = [
-        { name: "Софія", surname: "Герус", role: "Відповідальна за корпоративні зв'язки", img: "/images/woofwoof.png" },
-        { name: "Максим", surname: "Сеньків", role: "Головний організатор", img: "/images/woofwoof.png" },
-        { name: "Діана", surname: "Степко", role: "Відповідальна за корпоративні зв'язки", img: "/images/woofwoof.png" },
-        { name: "Софія", surname: "Чемерис", role: "Відповідальна за людські ресурси", img: "/images/woofwoof.png" },
-        { name: "Андрій", surname: "Родінчук", role: "Відповідальний за технічну частину", img: "/images/woofwoof.png" },
-        { name: "Анна", surname: "Медзин", role: "Відповідальна за логістичне забезпечення", img: "/images/woofwoof.png" },
-        { name: "Катерина", surname: "Мацейко", role: "Відповідальна за зв'язки з громадськістю", img: "/images/woofwoof.png" },
-        { name: "Вікторія", surname: "Шийка", role: "Відповідальна за зв'язки з громадськістю", img: "/images/woofwoof.png" },
-        { name: "Анна", surname: "Гащук", role: "Дизайнер", img: "/images/woofwoof.png" },
-        { name: "Святослав", surname: "Гонський", role: "Відповідальний за наповнення", img: "/images/woofwoof.png" },
-        { name: "Богдан", surname: "Горбачов", role: "Ментор", img: "/images/woofwoof.png" },
+        { name: "Софія", surname: "Герус", role: "Відповідальна за корпоративні зв'язки", img: "/coreteam/CR_S.png" },
+        { name: "Максим", surname: "Сеньків", role: "Головний організатор", img: "/coreteam/MO.png" },
+        { name: "Діана", surname: "Степко", role: "Відповідальна за корпоративні зв'язки", img: "/coreteam/CR_D.png" },
+        { name: "Софія", surname: "Чемерис", role: "Відповідальна за людські ресурси", img: "/coreteam/HR.png" },
+        { name: "Андрій", surname: "Родінчук", role: "Відповідальний за технічну частину", img: "/coreteam/IT.png" },
+        { name: "Анна", surname: "Медзин", role: "Відповідальна за логістичне забезпечення", img: "/coreteam/LG.png" },
+        { name: "Катерина", surname: "Мацейко", role: "Відповідальна за зв'язки з громадськістю", img: "/coreteam/PR_K.png" },
+        { name: "Вікторія", surname: "Шийка", role: "Відповідальна за зв'язки з громадськістю", img: "/coreteam/PR_V.png" },
+        { name: "Анна", surname: "Гащук", role: "Дизайнер", img: "/coreteam/DS.png" },
+        { name: "Святослав", surname: "Гонський", role: "Відповідальний за наповнення", img: "/coreteam/CT.png" },
+        { name: "Богдан", surname: "Горбачов", role: "Ментор", img: "/coreteam/MT.png" },
     ];
 
     return (

@@ -8,7 +8,7 @@
   .cardWrapper {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 160px;
     max-width: 90%;
     margin: 0 auto;
   }
@@ -79,6 +79,7 @@
   }
   .image {
     max-width: 630px;
+    transform: translateX(-20%);
     border-radius: 1rem;
     object-fit: cover;
   }

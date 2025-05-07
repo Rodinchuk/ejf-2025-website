@@ -15,7 +15,8 @@ export default function PartnersPrev(){
             <img src="./images/pball7.png" className="pball7" />
             <h2 className='ptitle'>Наші партнери</h2>
             <div className="partners">
-                <img src="./images/p10.png" className='partner'></img>
+                <img src="./images/globallogic.png" className='partner'></img>
+                {/* <img src="./images/p10.png" className='partner'></img> */}
                 <img src="./images/p15.png" className='partner'></img>
                 <img src="./images/kpmg.png" className='partner'></img>
                 <img src="./images/bilfinger.png" className='partner'></img>

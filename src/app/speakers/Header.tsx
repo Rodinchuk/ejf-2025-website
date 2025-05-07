@@ -14,12 +14,12 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const scrollToPartik = () => {
-    window.location.href = '/#bot';
-  };
-  const scrollToPartnership = () => {
-    window.location.href = '/#partnership';
-  };
+  // const scrollToPartik = () => {
+  //   window.location.href = '/#bot';
+  // };
+  // const scrollToPartnership = () => {
+  //   window.location.href = '/#partnership';
+  // };
 
   const scrollToHome = () => {
     document.getElementById("/home")?.scrollIntoView({ behavior: "smooth" });

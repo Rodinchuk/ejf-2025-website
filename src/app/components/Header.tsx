@@ -14,9 +14,9 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const scrollToPartik = () => {
-    document.getElementById("bot")?.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToPartik = () => {
+  //   document.getElementById("bot")?.scrollIntoView({ behavior: "smooth" });
+  // };
   const scrollToPartnership = () => {
     document.getElementById("partnership")?.scrollIntoView({ behavior: "smooth" });
   };

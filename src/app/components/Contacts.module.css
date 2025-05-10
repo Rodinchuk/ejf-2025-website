@@ -258,6 +258,10 @@
     .contactInfo{
       justify-content:flex-start;
       align-items:flex-start;
+      padding: 2rem;
+      border-radius: 1rem;
+      padding-bottom: 1.2rem;
+      border: #257BFC 3px solid;
     }
     .cardWrapper{
       flex-direction: column;
@@ -270,7 +274,7 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-      width: 230px;
+      width: 100%;
       border-radius: 16px;
       padding: 20px 10px;
     }

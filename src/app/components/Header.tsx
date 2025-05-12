@@ -14,9 +14,9 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  // const scrollToPartik = () => {
-  //   document.getElementById("bot")?.scrollIntoView({ behavior: "smooth" });
-  // };
+  const scrollToPartik = () => {
+    document.getElementById("bot")?.scrollIntoView({ behavior: "smooth" });
+  };
   const scrollToPartnership = () => {
     document.getElementById("partnership")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -50,14 +50,14 @@ const Header = () => {
                 Розклад
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link href="/speakers">Спікери</Link>
-            </li> */}
+            </li>
           </ul>
         </nav>
-        {/* <button onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>
+        <button onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>
           Стати учасником
-        </button> */}
+        </button>
         <button onClick={scrollToPartnership} className={`${styles.partnerButton1} ${styles.desktopOnly}`}>
           Стати партнером
         </button>
@@ -82,16 +82,16 @@ const Header = () => {
                 Розклад
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link href="/speakers" onClick={closeMenu}>
                 Спікери
               </Link>
-            </li> */}
-            {/* <li> 
+            </li>
+            <li> 
               <button className={styles.partnerButton} onClick={closeMenu} >
                 <Link style={{ color: '#111a94', fontFamily: 'Nunito'}} href="/#bot">Стати учасником</Link>
               </button>
-            </li> */}
+            </li>
             <li>
               <button className={styles.partnerButton1} onClick={closeMenu}>
                 <Link style={{ fontFamily: 'Nunito'}} href="/#partnership">Стати партнером </Link>

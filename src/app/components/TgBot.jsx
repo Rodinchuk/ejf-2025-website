@@ -36,7 +36,7 @@ export default function TelegramBot() {
       `}</style>
     </>
     </div>
-            <a href="https://t.me/your_bot_link" target="_blank" rel="noopener noreferrer" className={styles.accessPortal}>
+            <a href="https://t.me/ejf_2025_bot" target="_blank" rel="noopener noreferrer" className={styles.accessPortal}>
               У нашому Telegram боті <Emoji symbol="🤩" />
             </a>
           </div>

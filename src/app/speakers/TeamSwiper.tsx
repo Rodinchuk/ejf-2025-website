@@ -13,25 +13,25 @@ interface ProfileData {
 
 const profiles: ProfileData[] = [
   {
-    name: "Андрій Раднічок",
-    role: "IT Responsible of ІЯК 2025 1",
+    name: "Наталя Шаховська",
+    role: "Ректор Національного університету «Львівська політехніка»",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/images/hapaikaicozik.png",
+      "Панельна дискусія «Робота після університету: чого не вистачає випускникам?»",
+    image: "/images/shakhovska.png",
   },
   {
-    name: "Андрій Раднічок",
-    role: "IT Responsible of ІЯК 2025 2",
+    name: "Інна Шульгіна",
+    role: "Lead Recruirer в Sombra",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/images/hapaikaicozik.png",
+      "Панельна дискусія «Робота після університету: чого не вистачає випускникам?»",
+    image: "/images/shulhina.png",
   },
   {
-    name: "Андрій Раднічок",
-    role: "IT Responsible of ІЯК 2025 3",
+    name: "Андрій Бойчук",
+    role: "Head of AI, викладач кафедри СШІ",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/images/hapaikaicozik.png",
+      "Панельна дискусія «Робота після університету: чого не вистачає випускникам?»",
+    image: "/images/boichuk.jpg",
   },
 ];
 

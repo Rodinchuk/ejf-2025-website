@@ -5,9 +5,7 @@ import WaveUp from '../../../public/images/bg-hero.png'
 const Conclusion = () => {
   return (
     <div className={styles.conclusion}>
-      
-      <div className={styles.conclusioncontainer}>
-      <div className={styles.imageWrapper}>
+        <div className={styles.imageWrapper}>
         <Image 
         src={WaveUp} 
         alt="img"
@@ -16,15 +14,17 @@ const Conclusion = () => {
         style={{ objectFit: 'relative', objectPosition: 'center' }} 
         priority 
         />
-        
-        
       </div>
+      <div className={styles.conclusioncontainer}>
+    
       <div className={styles.conclusioncontent}>
         
         <h2 className={styles.title}>Інвестуй у майбутнє!</h2>
         <p className={styles.description}></p>
-        <a href="#partnership" className={styles.conclusionlink}>
-        {/* <button className={styles.conclusionbutton}>Стати учасником</button> */}
+        <a href="#bot" className={styles.conclusionlink}>        
+        <button className={styles.conclusionbutton}>Стати учасником</button>
+        </a>
+        <a href="#partnership" className={styles.conclusionlink1}>
         <button className={styles.conclusionpbutton}>Стати партнером</button>
         
         </a>

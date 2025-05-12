@@ -14,13 +14,10 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  // const scrollToPartik = () => {
-  //   document.getElementById("bot")?.scrollIntoView({ behavior: "smooth" });
-  // };
-  // const scrollToPartnership = () => {
-  //   document.getElementById("partnership")?.scrollIntoView({ behavior: "smooth" });
-  // };
-
+  const scrollToPartik = () => {
+    document.getElementById("bot")?.scrollIntoView({ behavior: "smooth" });
+  };
+ 
   const scrollToHome = () => {
     document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -50,14 +47,14 @@ const Header = () => {
                 Розклад
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link href="/speakers">Спікери</Link>
-            </li> */}
+            </li>
           </ul>
         </nav>
-        {/* <button onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>
-          Стати учасником
-        </button> */}
+        <Link className={`${styles.partnerButton} ${styles.desktopOnly}`} style={{ fontFamily: 'Nunito', textDecoration: 'none'}} href="/#bot">
+            Стати учасником
+          </Link>
          <Link className={`${styles.partnerButton1} ${styles.desktopOnly}`} style={{ fontFamily: 'Nunito', textDecoration: 'none'}} href="/#partnership">
             Стати партнером
           </Link>
@@ -82,16 +79,17 @@ const Header = () => {
                 Розклад
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link href="/speakers" onClick={closeMenu}>
                 Спікери
               </Link>
-            </li> */}
-            {/* <li>
-            <button onClick={scrollToPartik} className={styles.partnerButton}>
-          Стати учасником
-        </button> */}
-            {/* </li> */}
+            </li>
+            <li>
+            <button className={styles.partnerButton} onClick={closeMenu}>
+                <Link href="/#bot" style={{ fontFamily: 'Nunito', color: '#111a94', textDecoration: 'none'}}>Стати учасником
+                </Link>
+              </button>
+            </li>
             <li>
               <button className={styles.partnerButton1} onClick={closeMenu}>
                 <Link href="/#partnership">Стати партнером

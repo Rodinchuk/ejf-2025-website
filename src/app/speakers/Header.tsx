@@ -50,20 +50,17 @@ const Header = () => {
                 Розклад
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link href="/speakers" style={{ fontWeight: "900" }}>Спікери</Link>
-            </li> */}
-         
-        {/* <button onClick={scrollToPartik} className={`${styles.partnerButton} ${styles.desktopOnly}`}>
-          Стати учасником
-        </button> */}
-        <li>
-          <Link className={`${styles.partnerButton1} ${styles.desktopOnly}`} style={{ fontFamily: 'Nunito'}} href="/#partnership">
+            </li>
+          </ul>
+        </nav>
+        <Link className={`${styles.partnerButton} ${styles.desktopOnly}`} style={{ fontFamily: 'Nunito', textDecoration: 'none'}} href="/#bot">
+            Стати учасником
+          </Link>
+         <Link className={`${styles.partnerButton1} ${styles.desktopOnly}`} style={{ fontFamily: 'Nunito', textDecoration: 'none'}} href="/#partnership">
             Стати партнером
           </Link>
-        </li>
-        </ul>
-        </nav>
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
@@ -84,19 +81,16 @@ const Header = () => {
                 Розклад
               </Link>
             </li>
-            {/* <li>
-              <Link href="/speakers" style={{ fontWeight: "900" }} onClick={closeMenu}>
-                Спікери
-              </Link>
-            </li> */}
-            {/* <li>
-            <button className={styles.partnerButton} onClick={closeMenu} >
-                <Link style={{ color: '#111a94', fontFamily: 'Nunito'}} href="/#bot">Стати учасником</Link>
+            <li>
+            <button className={styles.partnerButton} onClick={closeMenu}>
+                <Link href="/#bot" style={{ fontFamily: 'Nunito', color: '#111a94', textDecoration: 'none'}}>Стати учасником
+                </Link>
               </button>
-            </li> */}
+            </li>
             <li>
               <button className={styles.partnerButton1} onClick={closeMenu}>
-                <Link style={{ fontFamily: 'Nunito'}} href="/#partnership">Стати партнером </Link>
+                <Link href="/#partnership">Стати партнером
+                </Link>
               </button>
             </li>
           </ul>

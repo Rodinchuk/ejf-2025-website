@@ -1,6 +1,6 @@
 .conclusion {
   position: relative;
-  height: 130%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@
 }
 .conclusionWave {
   position: absolute;
-  top: -1px;
+  top: -100px;
   left: 0;
   width: 100%;
   transform: scale(-1);
@@ -32,6 +32,16 @@
   font-family: 'Exo 2';
 }
 .conclusionlink{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-bottom: 5%;
+}
+.conclusionlink1{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,6 +208,7 @@
 @media(min-width:1024px){
   
 .conclusioncontent{
+  top: 20%;
   position: relative;
 }
 }

@@ -13,10 +13,6 @@ const Header = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-
-  const scrollToPartik = () => {
-    document.getElementById("bot")?.scrollIntoView({ behavior: "smooth" });
-  };
  
   const scrollToHome = () => {
     document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
